@@ -1,7 +1,7 @@
 <?php
 use Migrations\AbstractMigration;
 
-class CreartePermisosTable extends AbstractMigration
+class PermisosTable extends AbstractMigration
 {
     /**
      * Change Method.
@@ -15,6 +15,7 @@ class CreartePermisosTable extends AbstractMigration
         $table = $this->table('Permisos');
         $table->addColumn('user_ID','integer',array('signed'=>'disable'))
             ->addColumn('token','integer',array('signed'=>'disable'))
+            ->addForeignKey('user_ID','usuarios','id',array('update'=>'NO_ACTION'))
             ->create();
     }
 }
