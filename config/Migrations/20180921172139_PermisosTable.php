@@ -16,6 +16,6 @@ class PermisosTable extends AbstractMigration
         $table->addColumn('user_ID','integer',array('signed'=>'disable'))
             ->addColumn('token','integer',array('signed'=>'disable'))
             ->addForeignKey('user_ID','usuarios','id',array('update'=>'NO_ACTION'))
-            ->create();
+            ->update();
     }
 }

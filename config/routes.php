@@ -77,3 +77,7 @@ Router::scope('/cake', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+
+Router::scope('/usuarios',function($routes){
+   $routes->connect('/index',['controller'=>'Usuarios','action'=>'index']); 
+});
