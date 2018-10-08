@@ -13,7 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'WorknFest';
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,6 +28,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('style.css') ?>
+    <?= $this -> Html -> script ( 'http://code.jquery.com/jquery-1.11.3.min.js') ?>
+    <?= $this -> Html -> script ( 'ini.js') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -53,5 +55,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </div>
     <footer>
     </footer>
+    <?php echo  $this -> Js -> writeBuffer (); ?>
 </body>
 </html>

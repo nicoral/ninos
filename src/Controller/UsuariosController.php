@@ -14,4 +14,9 @@ class UsuariosController extends AppController
         $usuarios = $this->paginate($this->Usuarios);
         $this->set('usuarios',$usuarios);
     }
+    public function ini()
+    {
+    	
+        $this->render();
+    }
 }

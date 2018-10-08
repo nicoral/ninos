@@ -80,4 +80,5 @@ Router::scope('/cake', function (RouteBuilder $routes) {
 
 Router::scope('/usuarios',function($routes){
    $routes->connect('/index',['controller'=>'Usuarios','action'=>'index']); 
+   $routes->connect('/ini',['controller'=>'Usuarios','action'=>'ini']); 
 });
